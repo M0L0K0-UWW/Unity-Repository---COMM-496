@@ -42,6 +42,6 @@ public class MoveObjectCoroutine : MonoBehaviour
 
             yield return new WaitForSeconds(3f);
 
-            print("Corutine is finished");
+            print("Corutine is finished.");
     }
 }

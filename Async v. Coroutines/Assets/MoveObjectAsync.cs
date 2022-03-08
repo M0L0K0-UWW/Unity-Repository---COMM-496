@@ -38,7 +38,12 @@ public class MoveObjectAsync : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, target.position, smoothing * Time.deltaTime);
 
             await Task.Yield();
-
         }
+
+        print("Reached the target.");
+
+        await Task.Delay(3000);
+
+        print("Async/Await is finished.");
     }
 }
